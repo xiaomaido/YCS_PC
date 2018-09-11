@@ -1,0 +1,196 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+        <title>氧宠社_分享我与萌宠的美好生活</title>
+        <meta name="keywords" content="氧宠社、氧宠社短视频、氧宠社宠物短视频、氧宠社笔记、氧宠社宠物笔记、氧宠社官网、氧宠社网页版">
+        <meta name="description" content="氧宠社APP是一个分享我与萌宠的美好生活的平台。在这里发现有趣好玩的世界，找到有意思的明星达人！">
+        <link rel="stylesheet" href="./css/index.css" />
+        <script>
+            window.specials_li_index=0
+            function specials_li_click(i) {
+                if (specials_li_index===i) return
+                var specials=document.getElementById('specials')
+                var specials_li = specials.children
+                var ele = specials_li[i]
+                for(var j=0,len=specials_li.length;j<len;j++) {
+                    if(i!==j) specials_li[j].setAttribute('class', '')
+                }
+                ele.setAttribute('class', 'active')
+                iphoneXSnapshop.setAttribute('class', "iphoneXSnapshop")
+                var t = setTimeout(function(){
+                    
+                    iphoneXSnapshop.src=['./images/',ele.getAttribute('data-src'),'.png'].join('')
+                    iphoneXSnapshop.setAttribute('class', "iphoneXSnapshop pt-page-" + (specials_li_index>i? "moveFromTop" : "moveFromBottom"))
+                    clearTimeout(t)
+                    specials_li_index=i
+                }, 100)
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="icon logo_brand"></div>
+            <ul class="nav">
+                <li class="active">首页</li>
+                <li>加入我们</li>
+            </ul>
+        </div>
+        <div class="video-area">
+            <div class="pictures" id="pictures"></div>
+            <div class="part-left">
+                <div class="brand">氧宠社</div>
+                <div class="slogan" id="slogan">分<span class="blink">|</span></div>
+                <!-- <div class="slogan" id="slogan">分享我与萌宠的美好生活<span> |</span></div> -->
+                <div class="qrcodes">
+                    <div class="icon iOS">iOS 版<div class="icon qrcodebg"></div></div>
+                    <div class="icon iOS Android">Android 版<div class="icon qrcodebg"></div></div>
+                </div>
+            </div>
+            <!-- preload="metadata" -->
+            <!-- src="http://sfmimg.b0.upaiyun.com/prod_00/cc3cfda0e89b54ef.mp4" -->
+            <!-- poster="http://sfmimg.b0.upaiyun.com/prod_00/717b9d1a38f76ef8.jpg" -->
+            <div class="icon iphone8">
+                <img src="./images/video1.png">
+            </div>
+            <!-- <video
+                preload="auto"
+                controls
+                autoplay="autoplay"
+                src="http://sfmimg.b0.upaiyun.com/ios_sdk_new/video.mp4"
+                webkit-playsinline="true"
+                playsinline="true"
+                x5-video-player-type="h5"
+                x5-video-player-fullscreen="true"
+            >您的浏览器不支持 video 标签</video> -->
+        </div>
+        <div class="post-area">
+            <!-- <img class="iphoneX" src="./images/iphoneNote.png"> -->
+            <div class="icon iphoneX">
+                <img class="iphoneXSnapshop" src="./images/iphoneXList.png">
+                <!-- <img class="iphoneXSnapshop" src="./images/iphoneXItem.png"> -->
+                <!-- <img class="iphoneXSnapshop" src="./images/iphoneXSignin.png"> -->
+            </div>
+            <ul class="specials" id="specials">
+                <li class="active" data-src="iphoneXList" onclick="specials_li_click(0)">
+                    <div class="title">精选 Selected</div>
+                    <div class="box">
+                        <div class="number">01</div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="desc">发现世界，分享生活</div>
+                </li>
+                <!-- <li>
+                    <div class="title">关注 Follow</div>
+                    <div class="box">
+                        <div class="number">02</div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="desc">日常点滴，不再错过</div>
+                </li> -->
+                <li class="" data-src="iphoneXItem" onclick="specials_li_click(1)">
+                    <div class="title">详情 Detail</div>
+                    <div class="box">
+                        <div class="number">02</div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="desc">点赞评论，稳中带皮</div>
+                </li>
+                <li class="" data-src="iphoneXSignin" onclick="specials_li_click(2)">
+                    <div class="title">登入 Signin</div>
+                    <div class="box">
+                        <div class="number">03</div>
+                        <div class="progress"></div>
+                    </div>
+                    <div class="desc">凭短信码，快速体验</div>
+                </li>
+            </ul>
+        </div>
+        <div class="what-we-are">
+            <div class="title">什么是氧宠社</div>
+            <div class="desc">氧宠社是服务数千万铲屎官和吸猫撸狗控日常娱乐、分享生活、宠物用品购买、线下商户服务需求的社区平台。</div>
+            <div class="desc">氧宠社提供海量娱乐短视频、社区笔记、商城、商户（寄养.美容.洗澡.就医）等内容。</div>
+            <div class="desc">氧宠社目标是成为最受欢迎之一的宠物社区。</div>
+            <ul class="aims">
+                <li>
+                    <div class="icon yuanjing"></div>
+                    <div class="aim">愿景</div>
+                    <div class="value">成为最受用户信任的互联网公司</div>
+                </li>
+                <li>
+                    <div class="icon shiming"></div>
+                    <div class="aim">使命</div>
+                    <div class="value">让全世界的萌宠生活触手可及</div>
+                </li>
+                <li>
+                    <div class="icon jiazhiguan"></div>
+                    <div class="aim">价值观</div>
+                    <div class="value">独立思考＋结果驱动＋正直诚信</div>
+                </li>
+            </ul>
+        </div>
+        <div class="address">
+            <img src="./images/map.png" alt="氧宠社公司地图位置" title="氧宠社公司地图位置" />
+            <div class="box">
+                <div class="name">ADDRESS</div>
+                <div class="here">我们在这里</div>
+                <div class="border"></div>
+                <div class="key">上海</div>
+                <div class="value">上海市 杨浦区 伟城路70号 创智天地1号楼</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="top">
+                <div class="top-left">
+                    <div class="icon logo_brand_slogan"></div>
+                    <div class="qrcodes">
+                        <div class="icon weixin">
+                            <div class="icon mp_weixin"></div>
+                        </div>
+                        <a class="icon weibo" href="https://weibo.com/xhsapp" target="_blank">
+                            <div class="icon mp_weixin"></div>
+                        </a>
+                        <div class="icon iOS">
+                            <div class="icon mp_weixin"></div>
+                        </div>
+                        <div class="icon Android">
+                            <div class="icon mp_weixin"></div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="top-right">
+                    <li>
+                        <div class="icon xieyi"></div>
+                        <div class="main">
+                            <div class="title">协议条款</div>
+                            <a href="http://quyou.weichongming.com/#/paperhot/301?_t=FAVORD&webview=1" target="_black"><div class="item">用户协议</div></a>
+                            <a href="http://quyou.weichongming.com/#/paperhot/294?_t=FAVORD&webview=1" target="_black"><div class="item">社区自律公约</div></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon msg"></div>
+                        <div class="main">
+                            <div class="title">公司相关</div>
+                            <div class="item">加入我们</div>
+                            <!-- <div class="item">商务合作</div> -->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="thinner-border clearboth"></div>
+            <div class="bottom">
+                <div class="row">
+                    <a>Copyright © 2018-2019 登蜜信息科技（上海）有限公司</a>
+                </div>
+                <div class="row">
+                    <a href="mailto:bd@yangchongshe.com">商务合作：bd@yangchongshe.com</a>
+                </div>
+                <div class="row">
+                    <a href="https://www.miibeian.gov.cn/">沪ICP备16040587号 </a>
+                    <!-- <a>| 违法不良信息举报电话：(027) 5931 3970</a> -->
+                </div>
+            </div>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
