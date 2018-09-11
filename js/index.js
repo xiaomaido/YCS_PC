@@ -217,8 +217,8 @@ window.onload=function(){
 
     // res=defaultResponse
     // renderPictures(res.data.data)
-    // xhr.open("get","http://api.yangchongshe.com/peanut/eatIndex/postList?limit="+itemLimitCount+"10&offset=0", false)
-    // xhr.send(null)
+    xhr.open("get","http://api.yangchongshe.com/peanut/eatIndex/postList?limit="+itemLimitCount+"10&offset=0", false)
+    xhr.send(null)
 
     function renderPictures(list){
         pictures.innerHTML=[
@@ -232,12 +232,4 @@ window.onload=function(){
         ].join('')
     }
     iphoneXSnapshop=document.getElementsByClassName('iphoneXSnapshop')[0]
-   
-
-    // for(var i=0,l=specials_li.length;i<l;i++) {
-    //     var element=specials_li[i]
-    //     element.onclick=function(){
-           
-    //     }
-    // }
 }
